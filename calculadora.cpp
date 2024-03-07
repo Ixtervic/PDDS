@@ -59,7 +59,7 @@ struct Calculadora {
 int main() {
     struct Calculadora calculadora1;
     float sec_num[100];
-    int lim, op;
+    int lim, op , exponente;
 
     do {
         cout << "---> Menu <---" << endl;
@@ -107,8 +107,10 @@ int main() {
             case 6:
                 cout << "ingresa un numero para elevarlo a una potencia";
                 cin >> num;
-                cout << "
-            case 6:
+                cout << "ingresa el exponente";
+                cin >> exponente;
+                potencia (num , exponente);
+            case 7:
                 cout << "Bye" << endl;
                 break;
             default:
