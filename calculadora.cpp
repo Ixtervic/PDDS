@@ -110,12 +110,12 @@ int main() {
                 cout << "La raiz cuadrada es: " << calculadora1.raizCuadrada(sec_num[0]) << endl;
                 break;
             case 6:
-				cout << "Ingresa un numero para elevarlo a una potencia: ";
-			    cin >> sec_num[0];
-			    cout << "Ingresa el exponente: ";
-			    cin >> lim;
-			    cout << sec_num[0] << "^" << lim << " = " << calculadora1.potencia(sec_num[0] , lim) << endl;
-				break;
+		cout << "Ingresa un numero para elevarlo a una potencia: ";
+		cin >> sec_num[0];
+		cout << "Ingresa el exponente: ";
+		cin >> lim;
+		cout << sec_num[0] << "^" << lim << " = " << calculadora1.potencia(sec_num[0] , lim) << endl;
+		break;
             case 7:
                 cout << "Bye" << endl;
                 break;
