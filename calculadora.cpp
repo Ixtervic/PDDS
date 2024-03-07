@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath> // Necesario para la función sqrt
+#include <cmath>
 using namespace std;
 
 struct Calculadora {
