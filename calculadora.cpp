@@ -11,7 +11,8 @@ struct Calculadora {
         cout << "3. Multiplicacion" << endl;
         cout << "4. Division" << endl;
         cout << "5. Raiz Cuadrada" << endl;
-        cout << "6. Salir" << endl;
+	cout << "6. Potencia" << endl;
+        cout << "7. Salir" << endl;
 	}
 	
     void pedir_num(float sec_num[], int lim) {
