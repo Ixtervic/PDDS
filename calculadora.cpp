@@ -45,6 +45,12 @@ struct Calculadora {
         return divi;
     }
 
+    float potencia (float num , int exponente) {
+        float elevar_num;
+        elevar_num = pow (num , exponente);
+        return elevar_num;
+    }    
+
     float raizCuadrada(float num) {
         return sqrt(num);
     }
@@ -62,7 +68,8 @@ int main() {
         cout << "3. Multiplicacion" << endl;
         cout << "4. Division" << endl;
         cout << "5. Raiz Cuadrada" << endl;
-        cout << "6. Salir" << endl;
+        cout << "6. Potencia" << endl;
+        cout << "7. Salir" << endl;
         cin >> op;
 
         switch (op) {
@@ -97,6 +104,10 @@ int main() {
                 cin >> sec_num[0];
                 cout << "La raiz cuadrada es: " << calculadora1.raizCuadrada(sec_num[0]) << endl;
                 break;
+            case 6:
+                cout << "ingresa un numero para elevarlo a una potencia";
+                cin >> num;
+                cout << "
             case 6:
                 cout << "Bye" << endl;
                 break;
