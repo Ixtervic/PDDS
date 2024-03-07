@@ -45,9 +45,9 @@ struct Calculadora {
         return divi;
     }
 
-    float potencia (float num , int exponente) {
+    float potencia (float sec_num[0] , float sec_num[1]) {
         float elevar_num;
-        elevar_num = pow (num , exponente);
+        elevar_num = pow (sec_num[0] sec_num[1]);
         return elevar_num;
     }    
 
@@ -59,7 +59,7 @@ struct Calculadora {
 int main() {
     struct Calculadora calculadora1;
     float sec_num[100];
-    int lim, op , exponente;
+    int lim, op;
 
     do {
         cout << "---> Menu <---" << endl;
@@ -106,10 +106,10 @@ int main() {
                 break;
             case 6:
                 cout << "ingresa un numero para elevarlo a una potencia";
-                cin >> num;
+                cin >> sec_num[0]
                 cout << "ingresa el exponente";
-                cin >> exponente;
-                potencia (num , exponente);
+                cin >> sec_num[1];
+                cout << sec_num[0] << "^" << sec_num[1] << " = " << calculadora1.potencia(sec_num[0] , sec_num [1]);
             case 7:
                 cout << "Bye" << endl;
                 break;
