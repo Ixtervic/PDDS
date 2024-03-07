@@ -3,8 +3,17 @@
 using namespace std;
 
 struct Calculadora {
-    Calculadora() {}
-
+	
+	void tiulos(){
+    	cout << "---> Menu <---" << endl;
+        cout << "1. Sumar" << endl;
+        cout << "2. Restar" << endl;
+        cout << "3. Multiplicacion" << endl;
+        cout << "4. Division" << endl;
+        cout << "5. Raiz Cuadrada" << endl;
+        cout << "6. Salir" << endl;
+	}
+	
     void pedir_num(float sec_num[], int lim) {
         int x;
         for (x = 0; x < lim; x++) {
@@ -45,15 +54,18 @@ struct Calculadora {
         return divi;
     }
 
-    float potencia (float sec_num[0] , float sec_num[1]) {
-        float elevar_num;
-        elevar_num = pow (sec_num[0] sec_num[1]);
-        return elevar_num;
-    }    
+    float potencia (float num , int exponente) {
+    	float elevar_num;
+    	elevar_num = pow (num , exponente);
+    	return elevar_num;
+	}
+
 
     float raizCuadrada(float num) {
-        return sqrt(num);
-    }
+        float raiz_cua;
+        raiz_cua = sqrt (num);
+        return raiz_cua;
+	}
 };
 
 int main() {
@@ -62,14 +74,7 @@ int main() {
     int lim, op;
 
     do {
-        cout << "---> Menu <---" << endl;
-        cout << "1. Sumar" << endl;
-        cout << "2. Restar" << endl;
-        cout << "3. Multiplicacion" << endl;
-        cout << "4. Division" << endl;
-        cout << "5. Raiz Cuadrada" << endl;
-        cout << "6. Potencia" << endl;
-        cout << "7. Salir" << endl;
+        calculadora1.tiulos();
         cin >> op;
 
         switch (op) {
@@ -100,23 +105,24 @@ int main() {
                 cout << "La division es: " << calculadora1.division(sec_num) << endl;
                 break;
             case 5:
-                cout << "Ingressa el numero para calcular la raiz cuadrada: ";
+                cout << "Ingresa el numero para calcular la raiz cuadrada: ";
                 cin >> sec_num[0];
                 cout << "La raiz cuadrada es: " << calculadora1.raizCuadrada(sec_num[0]) << endl;
                 break;
             case 6:
-                cout << "ingresa un numero para elevarlo a una potencia";
-                cin >> sec_num[0]
-                cout << "ingresa el exponente";
-                cin >> sec_num[1];
-                cout << sec_num[0] << "^" << sec_num[1] << " = " << calculadora1.potencia(sec_num[0] , sec_num [1]);
+				cout << "Ingresa un numero para elevarlo a una potencia: ";
+			    cin >> sec_num[0];
+			    cout << "Ingresa el exponente: ";
+			    cin >> lim;
+			    cout << sec_num[0] << "^" << lim << " = " << calculadora1.potencia(sec_num[0] , lim) << endl;
+				break;
             case 7:
                 cout << "Bye" << endl;
                 break;
             default:
                 cout << "Opcion invalida";
         }
-    } while (op != 6);
+    } while (op != 7);
 
     return 0;
 }
