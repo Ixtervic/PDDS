@@ -87,21 +87,21 @@ int main() {
                 cout << "La suma es: " << calculadora1.suma(sec_num, lim) << endl;
                 break;
             case 2:
-                cout << "Ingressa la cantidad de numeros a restar" << endl;
+                cout << "Ingresa la cantidad de numeros a restar" << endl;
                 cin >> lim;
                 cout << "Ingrese los numeros: " << endl;
                 calculadora1.pedir_num(sec_num, lim);
                 cout << "La resta es: " << calculadora1.resta(sec_num, lim) << endl;
                 break;
             case 3:
-                cout << "Ingressa la cantidad de numeros a multiplicar" << endl;
+                cout << "Ingresa la cantidad de numeros a multiplicar" << endl;
                 cin >> lim;
                 cout << "Ingrese los numeros: " << endl;
                 calculadora1.pedir_num(sec_num, lim);
                 cout << "La multiplicacion es: " << calculadora1.multiplicacion(sec_num, lim) << endl;
                 break;
             case 4:
-                cout << "Ingressa 2 numeros a dividir" << endl;
+                cout << "Ingresa 2 numeros a dividir" << endl;
                 calculadora1.pedir_num(sec_num, 2);
                 cout << "La division es: " << calculadora1.division(sec_num) << endl;
                 break;
